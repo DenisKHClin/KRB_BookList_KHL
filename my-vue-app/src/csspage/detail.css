@@ -1,0 +1,417 @@
+[data-theme="light"] {
+    --book-details: #f0f0f0;
+
+  }
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+
+/* Book details container */
+.book-details {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--book-details); /* Используем переменную */
+    border-radius: 15px;
+    padding: 30px;
+}
+
+/* Book details header (image + info) */
+.book-details-header {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.book-details-image {
+        width: 150px; /* Увеличьте ширину изображения (было 128px) */
+        height: 240px; /* Увеличьте высоту изображения пропорционально (было 192px) */
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+.book-details-info {
+    flex: 1;
+    color: var(--text-color); /* Заменяем #ffffff */
+}
+
+.book-details-info h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--text-color); /* Заменяем #ffffff */
+}
+
+.book-details-info p {
+    font-size: 18px;
+    color: var(--text-secondary); /* Заменяем #cccccc, используем новую переменную для второстепенного текста */
+    margin-bottom: 10px;
+}
+
+/* Tabs for genres (like "Прочее", "Социально-психологическая фантастика", etc.) */
+.book-details-info .genre-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.book-details-info .genre-tabs span {
+    background-color: #444444; /* Dark gray for tabs */
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.book-details-info .genre-tabs span:hover {
+    background-color: #555555;
+}
+/* Container for book image and read button */
+.book-details-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the image and button */
+}
+/* Add container for image and button to stack them vertically */
+.book-details-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Space between image and button */
+}
+
+/* Adjust read-button for better alignment under the image */
+.read-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #1e90ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 0; /* Remove top margin to avoid extra spacing */
+}
+.deferred-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #1e90ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 0; /* Remove top margin to avoid extra spacing */
+}
+
+.quiz-button{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #1e90ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 0; /* Remove top margin to avoid extra spacing */
+}
+
+.deferred-button-det {
+    display: inline-block;
+    padding: 12px 15px;
+    background-color: #1e90ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 80px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 0; /* Remove top margin to avoid extra spacing */
+    border: none; /* Убираем возможные границы */
+
+
+}
+
+
+
+/* Ensure book-description follows the info block naturally */
+.book-description {
+    margin-top: 30px; /* Adjust spacing as needed */
+}
+
+/* Optional: Adjust header layout for better spacing */
+.book-details-header {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .book-details-image-container {
+        align-items: center;
+    }
+
+    .read-button {
+        width: fit-content;
+    }
+
+    .book-details-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-details-info {
+        text-align: center; /* Center text for mobile */
+    }
+
+    .genre-tabs {
+        justify-content: center; /* Center genre tabs on mobile */
+    }
+}
+
+.book-description h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.book-description p {
+    font-size: 16px;
+    color: #cccccc;
+    line-height: 1.8;
+}
+
+.review-form {
+    margin-top: 40px;
+    background-color: var(--button-bg); /* Используем переменную вместо #333333 */
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.review-form h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: medium;
+    color: var(--text-color); /* Заменяем #ffffff */
+    margin-bottom: 8px;
+}
+
+
+.review-form {
+    margin-top: 20px;
+  }
+  
+  .review-form h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--text-color); /* Заменяем #ffffff */
+}
+
+.rating-stars {
+    display: flex;
+    gap: 8px;
+}
+
+.star {
+    font-size: 28px;
+    color: var(--rating-color); /* Заменяем #666666 на переменную */
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star.filled {
+    color: var(--star-color); /* Уже использует #f6e05e, это нормально */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color); /* Адаптируем границу */
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--text-color); /* Заменяем #ffffff */
+    background-color: var(--input-bg); /* Адаптируем фон */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1e90ff;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.3);
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+.review-form button {
+    padding: 12px 30px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review-form button:hover {
+    background-color: #1c86ee;
+}
+
+.review-form button:disabled {
+    background-color: #666666;
+    cursor: not-allowed;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: static;
+        height: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .book-details-header {
+        flex-direction: column;
+    }
+
+    .book-details-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+.delete-button {
+    padding: 10px 20px;
+    background: #dc3545; /* Красный цвет для удаления */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 10px 10px 0;
+    display: inline-block;
+
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 0; /* Remove top margin to avoid extra spacing */
+  }
+  
+  .delete-button:hover {
+    background: #c82333;
+  }
+  
+  .book-description {
+    margin-top: 20px;
+  }
+  
+  .book-description h3 {
+    color: var(--text-color);
+  }
+  
+  .book-description p {
+    font-size: 16px;
+    color: var(--text-secondary); /* Заменяем #cccccc */
+    line-height: 1.8;
+}
+
+  
+.reviews-list {
+    margin-top: 40px;
+    background-color: var(--button-bg); /* Заменяем #333333 на переменную для фона */
+    padding: 25px;
+    border-radius: 10px;
+}
+  
+  .reviews-list h3 {
+    color: var(--text-color);
+  }
+  
+  .review-item {
+    border-top: 1px solid var(--border-color);
+    padding: 10px 0;
+  }
+  
+  .review-item p {
+    margin: 5px 0;
+    color: var(--text-color);
+  }
+  
+  .review-date {
+    font-size: 0.9em;
+    color: var(--text-secondary);
+  }
+  
+  .delete-review-button {
+    padding: 5px 10px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .edit-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #28a745; /* Зелёный цвет для редактирования */
+    color: white;
+    text-decoration: none;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin-left: 10px; /* Отступ для выравнивания с другими кнопками */
+}
+
+.edit-button:hover {
+    background-color: #218838; /* Тёмно-зелёный при наведении */
+}

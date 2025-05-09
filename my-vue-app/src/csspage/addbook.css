@@ -1,0 +1,103 @@
+.add-book-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.add-book-form h2 {
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.add-book-form button {
+  padding: 10px 20px;
+  background-color: #167c44; /* Синий для кнопки "Добавить вопрос" */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.add-book-form button:disabled {
+  background-color: #666666;
+  cursor: not-allowed;
+}
+
+.add-book-form button:hover:not(:disabled) {
+  background-color: #27db4e;
+}
+
+.submit-button {
+  background-color: #28a745; /* Зелёный, как edit-button в detail.css */
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #218838; /* Тёмно-зелёный при наведении */
+}
+
+.quiz-preview {
+  margin-top: 20px;
+}
+
+.quiz-preview h3 {
+  color: var(--text-color);
+}
+
+.quiz-preview p {
+  color: var(--text-secondary);
+}
+
+.quiz-question {
+  margin-bottom: 15px;
+}
+
+.remove-question-button {
+  padding: 5px 10px;
+  background-color: #dc3545; /* Красный для удаления */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.remove-question-button:hover {
+  background-color: #c82333; /* Тёмно-красный при наведении */
+}

@@ -1,0 +1,167 @@
+/* Define theme variables */
+[data-theme="light"] {
+  --background-color: #ffffff;
+  --text-color: #333;
+  --secondary-text-color: #444;
+  --card-bg: #fafafa;
+  --border-color: #ddd;
+  --shadow-color: rgba(0, 0, 0, 0.05);
+  --error-color: #d9534f;
+  --input-border: #ccc;
+  --input-focus-border: #007bff;
+}
+
+[data-theme="dark"] {
+  --background-color: #1a202c;
+  --text-color: #ffffff;
+  --secondary-text-color: #cccccc;
+  --card-bg: #2d3748;
+  --border-color: #444444;
+  --shadow-color: rgba(255, 255, 255, 0.05);
+  --error-color: #ff6666;
+  --input-border: #555555;
+  --input-focus-border: #4299e1;
+}
+
+/* Основной контейнер для всего теста */
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px var(--shadow-color);
+}
+
+/* Контейнер для всех вопросов */
+.questions-container {
+  margin-bottom: 30px;
+}
+
+/* Блок для каждого вопроса */
+.question-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 8px var(--shadow-color);
+}
+
+/* Текст вопроса */
+.question-text {
+  font-size: 18px;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+/* Контейнер для вариантов ответа */
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Стили для каждого варианта ответа */
+.option-label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: var(--secondary-text-color);
+}
+
+/* Стили для выбранных вариантов */
+.quiz-option {
+  margin-right: 10px;
+}
+
+/* Кнопки действий */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.primary-button {
+  display: inline-block;
+  padding: 8px 10px;
+  background-color: #46e656;
+  color: white;
+  text-decoration: none;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 0; /* Remove top margin to avoid extra spacing */
+}
+
+.primary-button:hover {
+  background: linear-gradient(135deg, #0ea84a, #07823d);
+}
+
+.test-button:hover {
+  background: linear-gradient(135deg, #c55307, #a04306);
+}
+
+.secondary-button {
+  display: inline-block;
+  padding: 8px 10px;
+  background-color: #2429cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 0; /* Remove top margin to avoid extra spacing */
+}
+
+.secondary-button:hover {
+  background: linear-gradient(135deg, #025bb5, #013a80);
+}
+
+/* Стили для кнопки "Назад" */
+.home-button {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #000000, #000000);
+  color: white;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 8px 10px;
+  background-color: #d20000;
+  color: white;
+  text-decoration: none;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 0; /* Remove top margin to avoid extra spacing */
+}
+
+.back-button:hover {
+  background: linear-gradient(135deg, #d20000, #990101);
+}
+
+.error-message {
+  text-align: center;
+  font-size: 20px;
+  color: var(--error-color);
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 15px 0;
+  font-size: 16px;
+  border: 2px solid var(--input-border);
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: var(--input-focus-border);
+}

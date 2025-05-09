@@ -1,0 +1,306 @@
+/* Глобальные стили */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Сетка для книг */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Карточка книги */
+.book-container {
+  background: #f2ebf8;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 280px;
+  margin: auto;
+}
+
+.book-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Детальная страница книги */
+.book-detail-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #fbf6ff;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.book-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-cover-large {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.book-cover {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+
+
+.no-image-large {
+  width: 250px;
+  height: 350px;
+  background-color: #ddd;
+  text-align: center;
+  line-height: 350px;
+  border-radius: 10px;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.book-info {
+  text-align: left;
+  max-width: 600px;
+}
+
+.book-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.book-description-full {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+  width: 200px;
+  margin: 5px 0;
+}
+
+
+
+/* Кнопки */
+.genre-button {
+  display: block;
+  width: 150px;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.genre-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Центрируем элементы */
+  gap: 15px; /* Отступ между кнопками */
+  max-width: 500px; /* Максимальная ширина контейнера */
+  margin: 0 auto; /* Центрируем весь блок */
+}
+
+.genre-list li {
+  width: calc(33.333% - 10px); /* Чтобы было 3 кнопки в ряд */
+  display: flex; 
+  justify-content: center;
+}
+
+
+.genre-button:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Цвета кнопок */
+.genre-dystopia {
+  background: linear-gradient(135deg, #FF5733, #C70039);
+}
+
+.genre-classic {
+  background: linear-gradient(135deg, #e6d00e, #b89a00);
+}
+
+.genre-horror {
+  background: linear-gradient(135deg, #3e4049, #1f2125);
+}
+
+.genre-detective {
+  background: linear-gradient(135deg, #9d9f93, #4a4b4c);
+}
+
+.genre-fantasy {
+  background: linear-gradient(135deg, #9b59b6, #6d3994);
+}
+
+.genre-romance {
+  background: linear-gradient(135deg, #ff69b4, #d14789);
+}
+
+.genre-comedy {
+  background: linear-gradient(135deg, #f4a62f, #d4881e);
+}
+
+.genre-novella {
+  background: linear-gradient(135deg, #008cba, #005f8a);
+
+}.genre-thestory {
+  background: linear-gradient(135deg, #34a853, #237d3d);
+}
+
+
+
+
+
+
+
+
+
+.home-container {
+  text-align: center;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.banner {
+
+  background-size: 70% auto; /* Сжимаем изображение до 90% по ширине */
+  background-position: center; /* Центрирует изображение */
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  height: 250px; /* Задаём фиксированную высоту для баннера */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Центрирует текст по вертикали и горизонтали */
+}
+
+
+.genre-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.genre-card {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  max-width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(31, 31, 31, 0.15);
+}
+
+.genre-image {
+  width: 120%;
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.genre-overlay-button {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(138, 140, 142, 0.85);
+  color: white;
+  padding: 7px 100px;
+  border-radius: 0px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.genre-overlay-button:hover {
+  background-color: rgb(121, 0, 0);
+}
+
+.breadcrumb {
+  margin-bottom: 1rem;
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
